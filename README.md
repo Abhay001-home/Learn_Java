@@ -2,18 +2,6 @@
 
 This repository contains beginner-level Java programs focused on arrays, searching, and basic problem-solving patterns.
 
-## Project Structure
-
-```text
-Learn_Java/
-├── Arr1.java
-├── Arr2.java
-├── Arr3.java
-├── maxArr.java
-├── no_reversal.java
-├── README.md
-```
-
 ## Files Included
 
 - `Arr1.java` — array creation, input, output, and update operations
