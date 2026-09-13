@@ -1,3 +1,6 @@
 # All of the pdf files
 *.pdf
 *.class
+
+maxArr.java
+no_reversal.java
