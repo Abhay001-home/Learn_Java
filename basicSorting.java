@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.Collections;
 
 public class basicSorting {
 

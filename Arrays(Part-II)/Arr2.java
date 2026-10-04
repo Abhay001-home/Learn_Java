@@ -1,9 +1,8 @@
 public class Arr2 {
 
      /*
-      * Course Outcome: Linear Search, Largest in Array, Smallest in an array, Binary
-      * Search
-      */
+      Course Outcome: Linear Search, Largest in Array, Smallest in an array, Binary Search
+     */
 
      public static int linSearch(int[] arr, int key) {
           for (int i = 0; i < arr.length - 1; i++) {
