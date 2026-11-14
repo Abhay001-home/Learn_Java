@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Assignment {
+public class Assignment12 {
      /*
       * Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
       * Example 1:
@@ -30,7 +30,7 @@ public class Assignment {
           return false;
      }
 
-     // Using Sets
+     // by implementing HashSet
      // Time Complexity -> O(n)
      public static boolean containDuplicate(int[] nums) {
           HashSet<Integer> set = new HashSet<>();
