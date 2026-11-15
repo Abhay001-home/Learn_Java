@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class RotateArray {
@@ -17,9 +18,33 @@ public class RotateArray {
 
      }
 
+     static void rotateBydPlace(int[] arr, int shift){
+          int size = arr.length;
+          shift = shift % size;
+
+          // 1. Storing the elemnts in temp[] array
+          ArrayList<Integer> temp = new ArrayList<>();
+          for(int i = 0; i < shift; i++){
+               temp.add(arr[i]);
+          }
+          // 2. Shifting of the elements
+          for (int i = shift; i < arr.length; i++) {
+               arr[i - shift] = arr[i];
+          }
+          // 3. Put back the elements
+          for (int i = size - shift; i < size; i++) {
+               arr[i] = temp.get(i - (size - shift));
+          }
+     }
+
      public static void main(String[] args) {
-          int[] arr = { 1, 2, 3, 4, 5 };
+          int[] arr = { 1, 2, 3, 4, 5, 6, 7};
           rotateLeftByShifting(arr);
+          System.out.println(Arrays.toString(arr));
+
+          // here shift is treated as index value so upto that index will gets shifted
+          int shift = 2;
+          rotateBydPlace(arr, shift);
           System.out.println(Arrays.toString(arr));
      }
 }
