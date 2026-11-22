@@ -65,21 +65,25 @@ public class SearchInMatrix {
           return false;
      }
 
-     // 3. optimal method
+     // 3. optimal method Staircase Search TC - O(log (n x m))
      static boolean searchInSortedMatrixOptimal(int[][] grid, int key) {
+          // top-right corner starting
           int row = 0, col = grid[0].length - 1;
+
           while (row < grid.length && col >= 0) {
                if (grid[row][col] == key) {
                     System.out.println("found key at (" + row + "," + col + " )");
                     return true;
                } else if (key < grid[row][col]) {
                     col--;
-               } else {
+               } else { // key > grid[row][col]
                     row++;
                }
           }
           System.out.println("key not foumd");
           return false;
+
+          // bottom-left corner starting
      }
 
      public static void main(String[] args) {
