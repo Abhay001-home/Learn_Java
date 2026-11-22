@@ -45,19 +45,19 @@ public class Func_Ques {
           // System.out.println("Enter the value to verify Even number");
           System.out.println("Enter the integer value to get the sum of the integer value: ");
           Scanner sc = new Scanner(System.in);
-          
+
           // change the input variable according to its need
 
-          int a = sc.nextInt();
-          
+          // int a = sc.nextInt();
+
           // int b = sc.nextInt();
           // int c = sc.nextInt();
-          
+
           // avgThree(a, b, c);
           // isEven(e);
           // isPalindrome(p);
           // sumOfDigits(s);
-          
+
           sc.close();
      }
 }
